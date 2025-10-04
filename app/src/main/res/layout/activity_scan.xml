@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="project.main.activity.ScanActivity">
+
+
+
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+            android:id="@+id/zxing_qrcode_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:zxing_scanner_layout="@layout/custom_qrcode_scanner">
+
+        </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+        <TextView
+            android:id="@+id/tv_tip_scan_setting"
+            android:background="@drawable/bg_corner_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="@string/scan_pls_scan_setting"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/lv_scan_qrcode_motion"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lv_scan_qrcode_motion"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/zxing_qrcode_scanner"
+            app:layout_constraintDimensionRatio="1.0"
+            app:layout_constraintEnd_toEndOf="@+id/zxing_qrcode_scanner"
+            app:layout_constraintStart_toStartOf="@+id/zxing_qrcode_scanner"
+            app:layout_constraintTop_toTopOf="@+id/zxing_qrcode_scanner"
+            app:layout_constraintWidth_percent="0.7"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text=""
+            app:backgroundTint="@color/theme_green"
+            app:icon="@drawable/ic_baseline_record"
+            app:iconSize="@dimen/icon_size"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/fab_setting"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:rippleColor="@color/light_green" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/theme_blue"
+            app:icon="@drawable/ic_baseline_settings"
+            app:iconSize="@dimen/icon_size"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:rippleColor="@color/white" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

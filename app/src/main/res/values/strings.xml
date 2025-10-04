@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">忠恕掃碼簽到</string>
+    <string name="permission_request">請給App相機權限以開啟掃碼功能。</string>
+
+    <!--Splash-->
+    <string name="splash_title">QRCode簽到器</string>
+    <string name="splash_loading_status_start">開始載入</string>
+    <string name="splash_key_check_title">預設欄位值確認</string>
+    <string name="splash_permission_key_word">權限</string> <!--如果Splash載入中出現這個字串，會請求權限。-->
+    <string name="splash_key_key_word">欄位</string> <!--如果Splash載入中出現這個字串，會要求設定預設值。。-->
+    <string name="splash_column_title_id">ID欄位</string>
+    <string name="splash_column_title_name">姓名欄位</string>
+    <string name="splash_column_title_password">密碼欄位</string>
+    <string name="splash_column_could_not_be_empty">欄位不可為空!</string>
+    <string name="splash_setting_default_name">預設設定檔</string>
+    <string name="splash_setting_default_password">1234</string>
+    <string name="splash_version">Ver.%1$s</string>
+
+    <!--Setting Page-->
+    <string name="setting_file_name_default">未命名的設定檔</string>
+    <string name="setting_password_title_default">檢核密碼</string>
+    <string name="setting_name_title_default">檢核名稱</string>
+    <string name="setting_id_title_default">檢核ID</string>
+    <string name="setting_name_title">設定檔名稱</string>
+    <string name="setting_cant_delete_by_size_is_1">當前只有一個設定檔，無法刪除。</string>
+    <string name="setting_cant_add_by_not_saved_current">請先編輯當前設定檔，儲存後再新增。</string>
+    <string name="setting_cant_add_by_over_max_name">新增失敗！此設定檔名稱過長，為了有最佳的體驗效果，名稱不得大於%1$s個字元。</string>
+    <string name="setting_cant_add_by_empty_name">新增失敗！設定檔名稱不可為空。</string>
+    <string name="setting_cant_add_by_over_max_size">新增失敗！您無法擁有超過%1$s個設定檔。</string>
+    <string name="setting_cant_save_by_same_name">%1$s失敗！因設定中已有兩個或兩個以上名稱是「%2$s」的檔案。</string>
+    <string name="setting_name_title_hint">設定檔名稱不可為空！</string>
+    <string name="setting_name_title_edit_cancel">是否取消變更？</string>
+    <string name="setting_column_content_can_not_blank_hint">此欄位不可為空！</string>
+    <string name="setting_save_action">儲存</string>
+    <string name="setting_receiver">updateDataKey_%1$s</string>
+    <string name="setting_scan_to_direct_title">掃描導向方式</string>
+    <string name="setting_file_send_mode_by_scan">依照掃描內容</string>
+    <string name="setting_file_send_mode_by_custom">自定義網址</string>
+    <string name="setting_after_scan_action_title">掃碼後動作</string>
+    <string name="setting_file_scan_after_action_1">停留於App</string>
+    <string name="setting_file_scan_after_action_2">另開瀏覽器至掃碼結果網頁</string>
+    <string name="setting_file_scan_after_action_3">另開瀏覽器至自訂網頁</string>
+    <string name="setting_adapter_key_can_not_be_empty">儲存失敗！欄位索引不可為空！</string>
+    <string name="setting_illegal_operation_can_not_modify_scan_var">儲存失敗！您不可新增系統保留欄位！請以修改方式執行。</string>
+    <string name="setting_delete_confirm">確定要刪除「%1$s」這個%2$s嗎？</string>
+    <string name="setting_could_not_delete">「%1$s」是必要欄位，無法刪除。</string>
+    <string name="setting_column_title">欄位設定</string>
+    <string name="setting_adapter_column_title">欄位名稱</string>
+    <string name="setting_adapter_column_title_default">未設定的欄位名稱</string>
+    <string name="setting_adapter_column_key">欄位索引</string>
+    <string name="setting_adapter_column_value">欄位值</string>
+    <string name="setting_key_default_not_arbitrary_modify">請確認是否要更改欄位預設值，若確認要修改請長按按鈕！</string>
+    <string name="setting_scan_action">是否確定要%1$s「%2$s」設定檔並設定為該設定檔？</string>
+    <string name="setting_scan_action_new">新增</string>
+    <string name="setting_scan_action_update">更新</string>
+    <string name="setting_scan_action_no_content">無掃描內容。</string>
+
+
+    <!--Record Page-->
+    <!--送出時間、掃到什麼存什麼、送出API的網址、送出時的設定檔都要存下來，可用掃到的QRcode重送(用當前設定檔去重送)。-->
+    <string name="record_time">送出時間</string>
+    <string name="record_scan_content">掃碼內容</string>
+    <string name="record_scan_name">簽到人員</string>
+    <string name="record_is_empty">尚無掃碼簽到紀錄</string>
+    <string name="record_send_content">送出內容</string>
+    <string name="record_send_setting">送出設定檔</string>
+    <string name="record_resend_confirm">請確定是否要依照當前「%1$s」的設定檔，將「%2$s」重新簽到？</string>
+    <string name="record_info_dialog_title">%1$s於%2$s的簽到資訊：</string>
+    <string name="record_multiple_resend_dialog_title">多選模式選擇</string>
+    <string name="record_multiple_resend_no_select">請先選擇要操作的紀錄再執行！</string>
+    <string name="record_multiple_resend_no_select_confirm">確定重選</string>
+    <string name="record_multiple_resend_no_select_cancel">取消操作</string>
+    <string name="record_multiple_resend_dialog_success_title">重新發送完成。</string>
+    <string name="record_multiple_resend_dialog_success_message">已將 %1$s 筆紀錄依照當前設定檔「%2$s」重新發送完成。</string>
+    <string name="record_multiple_resend_dialog_check_message">請確定是否要依照當前「%1$s」的設定檔，將所選擇的 %2$s 人重新簽到？</string>
+    <string name="record_multiple_resend_progress_text">正在將 %1$s 重新傳輸中，此為重新傳送中的%2$s/%3$s，請稍等…</string>
+    <string name="record_delete_confirm">確定要刪除這 %1$s 筆資料嗎？</string>
+
+    <!--對話框共用-->
+    <string name="dialog_ok">確定</string>
+    <string name="dialog_cancel">取消</string>
+
+    <!--訊息對話框-->
+    <string name="dialog_notice_title">注意</string>
+    <string name="dialog_error_message">簽到錯誤，請確認掃描到的QRCode與設定檔是否正確。</string>
+    <string name="dialog_sign_in_success_title">簽到成功</string>
+
+    <!--檢核密碼輸入框-->
+    <string name="password_dialog_title">請輸入檢核密碼</string>
+    <string name="password_dialog_hint">檢核密碼不可為空</string>
+
+    <!--進度框-->
+    <string name="dialog_progress_default_title">傳輸中，請稍等…</string>
+    <string name="record_resend_progress_text">正在將 %1$s 重新傳輸中，請稍等…</string>
+
+
+    <!--SharePreference Default Key Value -->
+    <string name="share_default_name_column">Null_Name_Column</string>
+    <string name="share_default_password_column">Null_Password_Column</string>
+    <string name="scan_no_setting">請先建立一個設定檔！</string>
+    <string name="scan_pls_scan_setting">請掃描設定檔</string>
+    <string name="dialog_edit_cancel">返回編輯</string>
+    <string name="dialog_edit_cancel_confirm">確定取消</string>
+
+
+</resources>
